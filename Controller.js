@@ -1,8 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs').promises;
 const { temaMemes, temaFilm } = require('./model');
-const { stat } = require('fs');
-const { info } = require('console');
+const chalk = require('chalk');
 
 async function start() {
   await inquirer
@@ -10,18 +9,18 @@ async function start() {
       {
         type: 'list',
         name: 'themes',
-        message: 'Выбери тему квиза',
+        message: chalk.magenta('Выбери тему квиза'),
         choices: ['Угадай фильм по эмодзи', 'Продолжи фразу...'],
       },
     ])
     .then((answers) => {
       if (answers.themes === 'Угадай фильм по эмодзи') {
         console.clear();
-        console.log('Вы выбрали тему "Фильмы по эмодзи"');
+        console.log(chalk.magenta('Вы выбрали тему "Фильмы по эмодзи"'));
         temaFilm();
       } else if (answers.themes === 'Продолжи фразу...') {
         console.clear();
-        console.log('Вы выбрали тему "Продолжи фразу..."');
+        console.log(chalk.magenta('Вы выбрали тему "Продолжи фразу..."'));
         temaMemes();
       }
     });
