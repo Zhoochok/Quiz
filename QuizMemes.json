@@ -1,5 +1,8 @@
 [
-    {},
-    {},
-    {}
+  { "question": "Продолжи фразу: ", "answers": [""], "points": [0, 5, 0] },
+  { "question": "Продолжи фразу: ", "answers": [""], "points": [0, 5, 0] },
+  { "question": "Продолжи фразу: ", "answers": [""], "points": [0, 5, 0] },
+  { "question": "Продолжи фразу: ", "answers": [""], "points": [0, 5, 0] },
+  { "question": "Продолжи фразу: ", "answers": [""], "points": [0, 5, 0] },
+  { "question": "Продолжи фразу: ", "answers": [""], "points": [0, 5, 0] }
 ]
