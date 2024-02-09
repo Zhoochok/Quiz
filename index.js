@@ -1,1 +1,2 @@
 function addd() {}
+function ass() {}
