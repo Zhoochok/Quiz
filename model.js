@@ -35,19 +35,24 @@ async function temaMemes() {
         if (answers.point === 5) {
           console.info(`Хорош, у тебя уже ${count} баллов`);
           return;
-        } else if (answers.point === 25) {
-          console.info(`ТЫ НАСТОЯЩИЙ ПРОГРАМИСТ ДЕРЖИ ${count} БАЛЛОВ`);
+        }
+        if (answers.point === -25) {
+          console.info('ТЫ НАСТОЯЩИЙ ПРОГРАМИСТ ОТНИМЕМ У ТЕБЯ 25 БАЛЛОВ');
+          return;
+        }
+        if (answers.point === 50) {
+          console.info('АХ ТЫ ПРОКАЗНИК)))) УВАЖАЕМ, ВОТ ТЕБЕ 50 БАЛЛОВ');
           return;
         }
         console.info(`Не хорош, у тебя все так же ${count} баллов`);
       });
   }
   console.clear();
-  if (count <= 10) {
+  if (count <= 15) {
     console.log(`В сумме ты заработал ${count} баллов. СЛАБОВАТО!`);
-  } else if (count > 10 && count <= 20) {
+  } else if (count > 15 && count <= 35) {
     console.log(`В сумме ты заработал ${count} баллов. ПРИЕМЛЕМО!`);
-  } else if (count > 20) {
+  } else if (count < 35) {
     console.log(`В сумме ты заработал ${count} баллов. ГЕНИЙ!`);
   }
 }
