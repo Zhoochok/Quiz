@@ -1,8 +1,8 @@
 [
-  { "question": "🎭🤪🐶", "answers": [""] },
-  { "question": "🚢🧊🚪", "answers": [""] },
-  { "question": "🪓🚪👩", "answers": [""] },
-  { "question": "🎈🏠🎈", "answers": [""] },
-  { "question": "👳‍♂️🛶🐯", "answers": [""] },
-  { "question": "🪑🔎💎", "answers": [""] }
+  { "question": "🎭🤪🐶", "answers": "Маска" },
+  { "question": "🚢🧊🚪", "answers": "Титаник" },
+  { "question": "🪓🚪👩", "answers": "Сияние" },
+  { "question": "🎈🏠🎈", "answers": "Вверх" },
+  { "question": "👳‍♂️🛶🐯", "answers": "Жизнь Пи" },
+  { "question": "🪑🔎💎", "answers": "12 стульев" }
 ]
