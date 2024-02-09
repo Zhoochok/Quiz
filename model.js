@@ -34,8 +34,10 @@ async function temaMemes() {
         count += answers.point;
         if (answers.point === 5) {
           console.info(`Хорош, у тебя уже ${count} баллов`);
+          return;
         } else if (answers.point === 25) {
           console.info(`ТЫ НАСТОЯЩИЙ ПРОГРАМИСТ ДЕРЖИ ${count} БАЛЛОВ`);
+          return;
         }
         console.info(`Не хорош, у тебя все так же ${count} баллов`);
       });
@@ -68,8 +70,22 @@ async function temaFilm() {
           console.info(`Хорош, у тебя уже ${(count += 10)} баллов.`);
           return;
         }
-        console.info(`Не хорош, теперь у тебя всего ${count -= 5} баллов.`);
+        console.info(
+          `Не хорош, теперь у тебя всего ${(count -= 5)} баллов.\nПравильный ответ: ${
+            read[i].answers
+          }`
+        );
       });
   }
+  console.clear();
+  if (count <= 20) {
+    console.log(`В сумме ты заработал ${count} баллов. СЛАБОВАТО!`);
+  } else if (count > 20 && count <= 40) {
+    console.log(`В сумме ты заработал ${count} баллов. ПРИЕМЛЕМО!`);
+  } else if (count > 40) {
+    console.log(`В сумме ты заработал ${count} баллов. ГЕНИЙ!`);
+  }
 }
-temaFilm();
+// temaFilm();
+
+module.exports = { temaMemes, temaFilm };
